@@ -7,6 +7,8 @@ from waitress import serve
 os.environ['FLASK_APP'] = 'main'
 app = Flask(__name__)
 
+app.config['SERVER_NAME'] = 'tommy-zhang.com'
+
 # Routing to home page
 # On form submission, redirect to start distribution fitting
 @app.route("/")
